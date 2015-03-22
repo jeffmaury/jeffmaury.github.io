@@ -11,3 +11,36 @@ So, if you need to use or test Java JDK 1.8.0 Update 11, you're stuck with the p
 Here is how to proceed to use Java JDK 1.8.0 Update 11 on Mac OS X Yosemite.
 
 == Download and install Pacifist
+
+The workaround is based on the fact that the Mac OS *pkg* that is stored in the downloaded *dmg* file contains the JDK distribution. So if we manage to open it, there is a chance we can extract the files.
+
+After having played with Mac OS tool called *pkgutil*, I found the best solution was to used another tool called *Pacifist*.
+
+So, first, you need to install *Pacifist*. You can find the binary of the following url: https://www.charlessoft.com/cgi-bin/pacifist_download.cgi?type=dmg
+
+Once you've downloaded the Pacifist *dmg* file, it should be opened in the Mac OS *Finder* and you just need to drag the *Pacifist.app* folder to the folder of your choice (*/Applications* is the recommanded one for Mac OS).
+
+== Download and install Java JDK 1.8.0 Update 11
+
+Download the *dmg* file from the following URL: http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html#jdk-8u11-oth-JPR
+
+Once you've downloaded the *dmg* file, open it. You should see a new volume called *JDK 8 Update 11*. Don't do anything and switch to the following phase.
+
+== Run Pacifist and open the pkg file
+
+Using the Mac OS Launchpad, launch *Pacifist* and open the *pkg* file that is located at the following path: */Volumes/JDK 8 Update 11/JDK 8 Update 11.pkg*. On Finder, then you should see *JDK 8 Update 11* under the *Devices*, so select this item and you should see the *JDK 8 Update 11.pkg* on the right pane of Finder. Double click on this file and you should see the following file:
+
+image::Pacifist.png[]
+
+In the tree that is displayed, select the *Contents of JDK 8 Update 11.pkg*, then click on the *Install* button. As the Java JDK will be installed in system libraries, then you need to select the *Use Administrator Privileges* checkbox and click the *Install* button.
+
+If you see dialogs about existing file, click on the *Replace* or *Update* button.
+
+When the installation is finished, *Java JDK 8 Update 11* will be installed under */Library/Java/JavaVirtualMachines/jdk1.8.0_11.jdk*.
+
+If you want to use it, see *JAVA_HOME* to */Library/Java/JavaVirtualMachines/jdk1.8.0_11.jdk/Contents/Home*.
+
+*Java JDK 8 Update 11* is now installed on Mac OS !!!
+
+
+
