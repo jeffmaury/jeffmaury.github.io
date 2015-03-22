@@ -1,0 +1,13 @@
+= Installing Java JDK 1.8.0 Update 11 on Yosemite
+
+If you need to use Java JDK 1.8.0 Update 11 on Mac OS X Yosemite, you probably noticed that the installation provided by Oracle fails with a strange message:
+
+*Java from Oracle requires Mac OS X 10.7.3 or later*
+
+Mac OS X Yosemite is version *10.10.X*
+
+So, if you need to use or test Java JDK 1.8.0 Update 11, you're stuck with the package provided by Oracle.
+
+Here is how to proceed to use Java JDK 1.8.0 Update 11 on Mac OS X Yosemite.
+
+== Download and install Pacifist
